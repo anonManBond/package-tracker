@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# 📦 YellowTrack – Parcel Tracking App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A clean, scalable, and user-friendly parcel tracking web application built with ReactJS. Created as part of a technical evaluation for Yellow Corporation.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🧠 UX Philosophy
 
-### `npm start`
+This project applies modern web design and psychology principles:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🎯 Swiss Grid for layout clarity
+- 🎨 Emotionally responsive color palette tied to parcel status
+- 🧠 NLP & Priming for comfort and control
+- 📱 Responsive design for mobile & desktop
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🚀 Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 📋 Order list view:
+  - Displays ETA, status, pickup location
+  - Live-translated content (EN/SV toggle)
+  - Status badge with color-coded meaning
+- 🔍 Order detail page:
+  - Extended info (delivery address, user name, parcel ID)
+  - Live interactive map with parcel coordinates
+- 🌐 i18n support via Context + custom translation structure
+- ⚠️ Graceful 404 fallback page
+- 💬 Fully scalable for future language and region support
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🛠 Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React (CRA)
+- Styled-components
+- Axios (API calls)
+- React Router
+- React Context (for i18n prep)
+- Leaflet + OpenStreetMap (interactive maps)
+- Mockaroo (for order data)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🗺 Live Map Note
+- Due to API quota limits on Mockaroo, data has been cached locally during development (/public/mock-orders.json).
+- Map coordinates are resolved using OpenStreetMap Nominatim API or directly from location_coordinate_latitude/longitude fields provided in the dataset.
+  
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📦 Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+git clone https://github.com/yourusername/yellowtrack.git
+cd yellowtrack
+npm install
+npm start

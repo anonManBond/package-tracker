@@ -51,7 +51,7 @@ This project applies modern web design and psychology principles:
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/yellowtrack.git
+git clone https://github.com/anonManBond/package-tracker.git
 cd yellowtrack
 npm install
 npm start
